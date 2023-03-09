@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.content {
+    width: 600px;
+    height: 900px;
+    background: #fff;
+    border-radius: 12px;
+}
+.content-header {
+    width: 100%;
+    height: 250px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    background:  linear-gradient(90deg, rgba(147, 164, 171, .9),transparent) , url(img/bg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.content-header {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+.content-header:nth-child(1) {
+    padding: 10px 20px;
+    position: relative;
+   
+}
+.content-header:nth-child(1) svg {
+    width: 50px;
+    fill: #fff;
+    cursor: pointer;
+}
+.content-header:nth-child(2) {
+    width: calc(100% - 40px);
+    padding: 10px 20px;
+}
+.movie-details {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+}
+.baslik {
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+    width: 100%;
+}
+.cinema-loc{
+width: 100%;
+margin-left: -16px;
+display: flex;
+flex-direction: row;
+color: #fff;
+font-size: 14px;
+}
+.cinema-loc svg {
+    margin-right: -10px;
+    width: 18px;
+    height: 18px;
+    fill: #fff;
+}
+.seats-status{
+    width: 400px;
+    margin: auto;
+    height: 60px;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 !important;
+}
+.seats-status div {
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: first baseline;
+}
+.content-seats {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.seats {
+    width: 100%;
+    padding: 0 20px;
+    height: 370px;
+}
+.seat{
+    fill: #4C5F6F;
+    width: 50px;
+    cursor: pointer;
+}
+.seatCols {
+    align-items: center;
+    width: 100%;
+    display: flex;
+}
+.row2 {
+    margin-left: 100px;
+}
+.screen {
+   position: relative;
+  width:80%;
+  margin: auto;
+  margin-top: 20px;
+  height: 100px;
+  border: solid 5px #4C5F6F;
+  border-color: transparent transparent #4C5F6F transparent;
+  border-radius: 0 0 240px 50%/60px;
+  box-shadow: 0px 50px 90px -20px rgba(76,95,111,.7);
+}
+.screen span {
+    font-size: 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 210px;
+}
+.content-details {
+    margin-top: 50px;
+    width: 100%;
+    background: #CE4871;
+    height: 120px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.details-basliklar {
+    background: #db3769;
+    width: 150px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.details-basliklar * {
+    font-size: 24px;
+    line-height: 2.4rem;
+    padding-left: 12px;
+    font-weight: 500;
+    color: #fff;
+}
+.b3{
+    font-size: 28px;
+    font-weight: 600;
+}
+.baslik-detaylar {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.baslik-detaylar * {
+    font-size: 24px;
+    line-height: 2.4rem;
+    padding-left: 12px;
+    font-weight: 500;
+    color: #fff;
+}
+.toplam {
+    font-size: 28px;
+    font-weight: 600;
+}
+.details-button {
+    width: 150px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.details-button button{
+    margin: auto;
+  width: 140px;
+  height: 80%;
+  display: flex;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  border-radius: 24px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+}
+.details-button button > svg {
+    width: 50px;
+}
+.selected{
+    fill:#CE4871 !important;
+}
+.dolu {
+    fill: #93A4AB !important;
+}
+path {
+    pointer-events: none;
+}
